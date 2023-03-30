@@ -1,0 +1,18 @@
+﻿<Page x:Class="PRAKTIKA_1WPF.ProizvoditePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PRAKTIKA_1WPF"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ProizvoditePage">
+
+    <Grid>
+        <DataGrid x:Name="GridPro" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <TextBox x:Name="Manifactu" TextWrapping="Wrap" Text="Введите производителя " Margin="58,186,608,168"/>
+        <TextBox x:Name="Addre" TextWrapping="Wrap" Text="Введите адрес" Margin="260,185,400,205"/>
+        <Button x:Name="Crea" Content="Создать" Margin="124,287,470,108"/>
+
+    </Grid>
+</Page>

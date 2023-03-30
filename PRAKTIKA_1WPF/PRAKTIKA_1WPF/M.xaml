@@ -1,0 +1,19 @@
+﻿<Window x:Class="PRAKTIKA_1WPF.M"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PRAKTIKA_1WPF"
+        mc:Ignorable="d"
+        Title="M" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="GridP" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,0,259" SelectionChanged="GridP_SelectionChanged"/>
+        <Button x:Name="CreatP" Content="Создать" Margin="118,329,546,61" Click="CreatP_Click"/>
+        <TextBox x:Name="Adres" TextWrapping="Wrap" Text="TextBox" Margin="240,259,436,135"/>
+        <TextBox x:Name="Munifaktyr"  TextWrapping="Wrap" Text="TextBox" Margin="35,259,642,135"/>
+        <Button x:Name="Close" Content="Закрыть" Margin="413,277,254,113" Click="Close_Click"/>
+        <Button x:Name="Del" Content="Удалить" HorizontalAlignment="Left" Margin="413,0,0,0" VerticalAlignment="Center" Height="44" Width="133" Click="Del_Click"/>
+        <Button x:Name="chang"  Content="Поменять" HorizontalAlignment="Left" Margin="605,0,0,0" VerticalAlignment="Center" Height="44" Width="133" Click="chang_Click"/>
+
+    </Grid>
+</Window>

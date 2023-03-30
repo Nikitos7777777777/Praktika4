@@ -1,0 +1,19 @@
+﻿<Window x:Class="PRAKTIKA_1WPF.P"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PRAKTIKA_1WPF"
+        mc:Ignorable="d"
+        Title="P" Height="450" Width="800">
+    <Grid RenderTransformOrigin="0.616,0.515">
+        <DataGrid x:Name="GridProd" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,0,271" SelectionChanged="GridProd_SelectionChanged"/>
+        <Button x:Name="Creat_p_k" Content="Создать" Height="58" VerticalAlignment="Bottom" Margin="146,0,456,56" Click="Creat_p_k_Click"/>
+        <Button x:Name="close" Content="Закрыть" Margin="620,189,36,198" Click="close_Click"/>
+        <ComboBox x:Name="Box_idP" HorizontalAlignment="Left" Margin="261,244,0,0" VerticalAlignment="Top" Width="181" Height="30"/>
+        <ComboBox Name="Box_idK" HorizontalAlignment="Left" Margin="10,244,0,0" VerticalAlignment="Top" Width="181" Height="30"/>
+        <Button x:Name="del" Content="Удалить" HorizontalAlignment="Left" Margin="457,189,0,0" VerticalAlignment="Top" Height="47" Width="144" Click="del_Click"/>
+        <Button x:Name="c" Content="Поменять" HorizontalAlignment="Left" Margin="548,259,0,0" VerticalAlignment="Top" Height="47" Width="144" Click="c_Click"/>
+
+    </Grid>
+</Window>
